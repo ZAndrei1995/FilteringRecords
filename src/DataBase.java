@@ -14,7 +14,7 @@ public class DataBase {
         return isAdded ;
     }
 
-    public void searchStringInData ( String stringToSearch ) {
+    public void searchStringByFirstLast ( String stringToSearch ) {
         for ( Employee iterator : employeeList ) {
             if ( iterator.getFirstName().contains(stringToSearch) || iterator.getLastName().contains(stringToSearch) ) {
                 System.out.println(iterator);
